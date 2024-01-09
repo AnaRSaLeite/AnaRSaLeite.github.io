@@ -2,7 +2,7 @@
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
 
 /*
-	https://anaritasaleite.com/
+	Stellar by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
@@ -71,8 +71,6 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
-
-
 
 /* Basic */
 
@@ -3003,14 +3001,14 @@ input, select, textarea {
 			display: inline-block;
 			margin-left: 4em;
 			padding: 0.65em;
-			border-radius: 100%;
-			border: solid 1px;
+			border-radius: 0;
+			border: none;
 		}
 
 			.spotlight .image img {
 				display: block;
-				border-radius: 100%;
-				width: 16em;
+				border-radius: 10%;
+				width: 12em;
 			}
 
 		@media screen and (max-width: 980px) {
