@@ -11,9 +11,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Make the home icon grey and visible on mobile / narrow screens */
+			@media screen and (max-width: 736px) {
+				#back-home {
+					color: #555 !important;
+					background: rgba(0, 0, 0, 0.08) !important;
+				}
+			}
+		</style>		
 	</head>
 	<body class="is-preload">
-<a href="https://www.anaritasaleite.com" class="icon solid fa-home"
+<a href="https://www.anaritasaleite.com" id="back-home" class="icon solid fa-home"
    title="Back to main site"
    style="position: fixed; top: 1em; left: 1em; z-index: 1000;
           width: 2.75em; height: 2.75em; line-height: 2.75em;
