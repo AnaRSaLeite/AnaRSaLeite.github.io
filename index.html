@@ -17,11 +17,13 @@
 				font-size: smaller;
 				margin: 0;
 				line-height: 1.5;
-				padding-left: 1.7em;
-				text-indent: -1.7em;
+				display: flex;
+				align-items: flex-start;
+				gap: 8px;
 			}
 			.role-line i, .affil-line i {
-				margin-right: 6px;
+				line-height: 1.5;
+				flex-shrink: 0;
 			}
 			.role-line { margin-top: 0.4em; }
 			.tight { margin-top: -0.5em; }
@@ -32,7 +34,24 @@
 				vertical-align: middle;
 				margin-left: 5px;
 			}
-			</style>
+			#first .features li {
+				width: 25%;
+			}
+			#first .features .icon.major {
+				width: 4em;
+				height: 4em;
+				line-height: 4em;
+			}
+			#first .features .icon.major:before {
+				font-size: 1.75rem;
+			}
+			@media screen and (max-width: 980px) {
+				#first .features li { width: 50%; }
+			}
+			@media screen and (max-width: 736px) {
+				#first .features li { width: 100%; }
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -127,21 +146,24 @@
 								</header>
 								<ul class="features">
 									<li>
-										<span class="icon solid major style1 fa-brain"></span>
+										<span class="icon solid major style1 fa-venus-mars"></span>
 										<h3>Gender processing</h3>
-										<p> Looking for the neural signatures of gender processing during comprehension using electroencephalography and behavioural measures in multiple language families.</p>
+										<p>Tracing the neural signatures of grammatical gender during comprehension with EEG and behavioural methods across language families, and mapping how a word's form — its orthography and phonology — cues gender through dual-route and pseudomorphological mechanisms.</p>
 									</li>
 									<li>
-										<span class="icon solid major style3 fa-search"></span>
-										<h3>Gender transparency</h3>
-										<p>Understanding the link between word form and gender values across different languages considering a dual-route mechanism and mechanisms of pseudomorphological decomposition.</p>
-									</li>
-									<li>
-										<span class="icon solid major style5 fa-child"></span>
+										<span class="icon solid major style2 fa-users"></span>
 										<h3>Social bias</h3>
-										<p>Exploring in a controlled and reliable way whether there is a connection between  
-											sex-based stereotypes and the abstract gender of nouns (e.g., woman - skirt)
-											during real-time noun processing.</p>
+										<p>Testing whether sex-based social stereotypes are tied to the abstract and semantic gender of nouns during real-time processing, linking our mental representation of grammar to social cognition.</p>
+									</li>
+									<li>
+										<span class="icon solid major style3 fa-heart"></span>
+										<h3>Emotion in language</h3>
+										<p>Exploring how emotion shapes comprehension across speakers, from German bilinguals to Spanish mono-, bi-, and trilinguals, and how affective meaning interacts with grammatical processing.</p>
+									</li>
+									<li>
+										<span class="icon solid major style4 fa-robot"></span>
+										<h3>Reading in an AI world</h3>
+										<p>Asking what AI-assisted summarization does to deep reading, bringing psycholinguistic and EEG methods to how generative AI reshapes comprehension — first in adults, then across development.</p>
 									</li>
 								</ul>
 								<footer class="major">
