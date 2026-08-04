@@ -34,8 +34,15 @@
 				vertical-align: middle;
 				margin-left: 5px;
 			}
+			#first .features {
+				display: grid;
+				grid-template-columns: repeat(4, 1fr);
+				border: none;
+			}
 			#first .features li {
-				width: 25%;
+				width: auto;
+				border: none;
+				padding: 1em;
 			}
 			#first .features .icon.major {
 				width: 4em;
@@ -46,10 +53,10 @@
 				font-size: 1.75rem;
 			}
 			@media screen and (max-width: 980px) {
-				#first .features li { width: 50%; }
+				#first .features { grid-template-columns: repeat(2, 1fr); }
 			}
 			@media screen and (max-width: 736px) {
-				#first .features li { width: 100%; }
+				#first .features { grid-template-columns: 1fr; }
 			}
 		</style>
 	</head>
